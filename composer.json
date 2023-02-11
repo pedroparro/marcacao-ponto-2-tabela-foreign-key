@@ -1,0 +1,17 @@
+{
+    "name": "pedro/ponto",
+    "autoload": {
+        "psr-4": {
+            "Models\\": "./models/",
+            "Controllers\\": "./controllers/",
+            "Views\\": "./views/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pedro",
+            "email": "pedroparro10@gmail.com"
+        }
+    ],
+    "require": {}
+}

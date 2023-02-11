@@ -1,0 +1,371 @@
+/*Author: Pedro Parro*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+section[class="sec-login"] {
+    width: 100%;
+    height: 90vh;
+}
+h2[id="sec-h2"] {
+    padding: 2rem;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+}
+span[id="sec-span"] {
+    color: crimson;
+    font-size: 2rem;
+}
+/*DIV*/
+div[class="div-left"] {
+    width: 50%;
+    height: 85vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+div[class="div-right"] {
+    width: 50%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+img[id="logo-ponto"] {
+    width: 25%;
+    height: 20%;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+}
+/*FORM LEFT*/
+form[class="form-left"] {
+    width: 50%;
+    height: 50vh;
+    padding-top: 10px;
+    position: absolute;
+    top: 25%;
+    margin: -25px 0 0 -25px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+input[class="input-left"] {
+    display: block;
+    width: 60%;
+    height: 4vh;
+    padding-left: 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin: 1rem auto; 
+    border: 1px solid #333;
+    font-size: 1.5rem;
+}
+select {
+    display: block;
+    width: 60%;
+    height: 4vh;
+    padding-left: 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin: 1rem auto; 
+    border: 1px solid #333;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+button[id="btn-marcacao"] {
+    display: block;
+    width: 60%;
+    height: 5vh;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin: 1rem auto; 
+    font-size: 1.6rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+button[id="btn-marcacao"]:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #333;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+/*FORM RIGHT*/
+form[class="form-right"] {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 50%;
+    height: 22vh;
+    padding-top: 2rem;
+    position: absolute;
+    top: 40%;
+    margin: -25px 0 0 -25px;
+}
+input[class="input-right"] {
+    display: block;
+    width: 60%;
+    height: 4vh;
+    padding-left: 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin: 1rem auto;
+    border: 1px solid #333;
+    font-size: 1.5rem;
+}
+button[id="btn-login"] {
+    display: block;
+    width: 60%;
+    height: 5vh;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin: 1rem auto;
+    font-size: 1.6rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+button[id="btn-login"]:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #333;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+i[class="fas fa-user"] {
+    position: absolute;
+    top: 18%;
+    right: 22%;
+    font-size: 2rem;
+    color: #333;
+    z-index: 10;
+}
+i[class="fas fa-lock"] {
+    position: absolute;
+    top: 42%;
+    right: 22%;
+    font-size: 2rem;
+    color: #333;
+    z-index: 10;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+/*alert-success*/
+p[id="alert-success"] {
+    height: 3rem;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i[class="fa fa-arrow-left"] {
+    background-color: #fff;
+    color: #333;
+    margin: 0 3px;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 2px;
+}
+/*alert-erro*/
+p[id="alert-erro"] {
+    height: 3rem;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*TIMER*/
+p[id="time"] {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width:350px) {
+    /*DIV*/
+
+    img[id="logo-ponto"] {
+        width: 60px;
+        height: 60px;
+        margin: 1rem auto;
+        display: block;
+        text-align: center;
+    }
+    /*FORM LEFT*/
+    form[class="form-left"] {
+        width: 70%;
+        height: 50vh;
+    }
+    input[class="input-left"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    select {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    button[id="btn-marcacao"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    /*alert-success*/
+    p[id="alert-success"] {
+        font-size: 1rem;
+    }
+    /*alert-erro*/
+    p[id="alert-erro"] {
+        font-size: 1rem;
+    }
+    i[class="fa fa-arrow-left"] {
+        font-size: 1rem;
+    }
+
+    /*FORM RIGHT*/
+    form[class="form-right"] {
+        width: 80%;
+        height: 20vh;
+    }
+    input[class="input-right"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    button[id="btn-login"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    i[class="fas fa-user"] {
+        top: 20%;
+        right: 15%;
+        font-size: 1.4rem;
+    }
+    i[class="fas fa-lock"] {
+        top: 42%;
+        right: 15%;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px){
+    /*DIV*/
+
+    img[id="logo-ponto"] {
+        width: 60px;
+        height: 60px;
+        margin: 1rem auto;
+        display: block;
+        text-align: center;
+    }
+    /*FORM LEFT*/
+    form[class="form-left"] {
+        width: 70%;
+        height: 50vh;
+    }
+    input[class="input-left"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    select {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    button[id="btn-marcacao"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    /*alert-success*/
+    p[id="alert-success"] {
+        font-size: 1rem;
+    }
+    /*alert-erro*/
+    p[id="alert-erro"] {
+        font-size: 1rem;
+    }
+    i[class="fa fa-arrow-left"] {
+        font-size: 1rem;
+    }
+
+    /*FORM RIGHT*/
+    form[class="form-right"] {
+        width: 80%;
+        height: 20vh;
+    }
+    input[class="input-right"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    button[id="btn-login"] {
+        display: block;
+        width: 80%;
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+    i[class="fas fa-user"] {
+        top: 20%;
+        right: 15%;
+        font-size: 1.4rem;
+    }
+    i[class="fas fa-lock"] {
+        top: 42%;
+        right: 15%;
+        font-size: 1.4rem;
+    }
+}
