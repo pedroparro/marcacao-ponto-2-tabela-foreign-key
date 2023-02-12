@@ -9,16 +9,16 @@ class PortalControllers
     public function portalControllers()
     {
         //EMPTY
-        if(empty($_POST['users_ponto'] && $_POST['pass_adm_ponto'])){
+        if(empty(trim($_POST['users_ponto']) && trim($_POST['pass_adm_ponto']))){
             header("location: ../index.php?l=Preenchimento obrigatório.");
             exit;
         }
 
         //ISSET
         if (isset($_POST['users_ponto'],$_POST['users_adm_ponto'],$_POST['pass_adm_ponto'])) {
-            $users_ponto = strip_tags($_POST['users_ponto']);
-            $users_adm_ponto = $_POST['users_adm_ponto'].str_repeat($users_ponto,1);
-            $pass_adm_ponto = strip_tags($_POST['pass_adm_ponto']);
+            $users_ponto = strip_tags(filter_var($_POST['users_ponto'], FILTER_SANITIZE_SPECIAL_CHARS));
+            $users_adm_ponto = strip_tags(filter_var($_POST['users_adm_ponto'], FILTER_SANITIZE_SPECIAL_CHARS)).str_repeat($users_ponto,1);
+            $pass_adm_ponto = strip_tags(filter_var($_POST['pass_adm_ponto'], FILTER_SANITIZE_SPECIAL_CHARS));
            
             $obj = new Portal();
             $rows = $obj->selectPortalDb($users_ponto,$pass_adm_ponto,$users_adm_ponto);
